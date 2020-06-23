@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "ATM_SERV")
 public class AtmServices {
 	@Column
 	private int id;
@@ -156,10 +156,10 @@ public class AtmServices {
 
 	@Override
 	public String toString() {
-		return "AtmServices [id=" + id + ", bankName=" + bankName + ", caardNumber=" + caardNumber + ", cardName="
+		return "AtmServices {id=" + id + ", bankName=" + bankName + ", caardNumber=" + caardNumber + ", cardName="
 				+ cardName + ", pinNumber=" + pinNumber + ", cvvNumber=" + cvvNumber + ", panNumber=" + panNumber
 				+ ", amount=" + amount + ", mobileNumber=" + mobileNumber + ", accountNumber=" + accountNumber
-				+ ", payeeMobileNumber=" + payeeMobileNumber + ", IfscCode=" + IfscCode + "]";
+				+ ", payeeMobileNumber=" + payeeMobileNumber + ", IfscCode=" + IfscCode + "}";
 	}
 
 }
