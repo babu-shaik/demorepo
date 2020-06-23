@@ -8,4 +8,5 @@ import com.example.atm.model.AtmServices;
 @Repository
 public interface AtmServicesImpl extends JpaRepository<AtmServices, Integer>{
 
+  
 }
