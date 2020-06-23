@@ -28,6 +28,7 @@ public class AtmServiceController {
 	@GetMapping("/getBalance")
 	public float getUserBalance(@RequestBody AtmServices services) {
 		
+		System.out.println("git demo proj");
 	
 		Optional<AtmServices> serviceObj = repo.findById(services.getId());
 		AtmServices obj = serviceObj.get();
